@@ -1,8 +1,9 @@
+import HeroBanner from "../../Components/HeroBanner";
 
 const Home = () => {
     return (
-        <div>
-            <h2 className="text-4xl text-center">Weather App</h2>
+        <div className="">
+           <HeroBanner></HeroBanner>
         </div>
     );
 };
