@@ -17,7 +17,7 @@ const HeroBanner = () => {
           <p className="mb-5 text-md text-gray-500">
           Your 24/7 Weather Update, Be ready, Always.
           </p>
-          <Link><button className="btn btn-primary rounded-lg bg-yellow-400 border-none text-purple-950 w-[120px] font-bold uppercase hover:bg-yellow-500">Get Start</button></Link>
+          <Link to="/searchBar"><button className="btn btn-primary rounded-lg bg-yellow-400 border-none text-purple-950 w-[120px] font-bold uppercase hover:bg-yellow-500">Get Start</button></Link>
         </div>
       </div>
     </div>
