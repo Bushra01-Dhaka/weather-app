@@ -3,6 +3,7 @@ import banner_img from "../assets/images/hero-1.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Navbar from "./Navbar";
 
 const HeroBanner = () => {
     useEffect(() => {
@@ -12,7 +13,7 @@ const HeroBanner = () => {
   return (
     <div>
         <div
-      className="hero min-h-screen"
+      className="hero min-h-[90vh]"
       style={{
         backgroundImage:
           `url(${banner_img})`,
@@ -25,10 +26,11 @@ const HeroBanner = () => {
           <p className="mb-5 text-md text-gray-500">
           Your 24/7 Weather Update, Be ready, Always.
           </p>
-          <Link to="/searchBar"><button className="btn btn-primary rounded-lg bg-yellow-400 border-none text-purple-950 w-[120px] font-bold uppercase hover:bg-yellow-500">Get Start</button></Link>
+          <Link to="/searchBar"><button className="btn btn-primary rounded-[50px] bg-yellow-400 border-none animate-bounce text-purple-950 w-[120px] font-bold uppercase hover:bg-yellow-300 hover:animate-none mt-8">Get Start</button></Link>
         </div>
       </div>
     </div>
+    <Navbar></Navbar>
     </div>
   );
 };
