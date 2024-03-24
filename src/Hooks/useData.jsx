@@ -4,14 +4,14 @@ const useData = () => {
   const [wdata, setWdata] = useState([]);
   const [loading, setLoading] = useState(true)
   useEffect(() => {
-    fetch("data.json")
+    fetch("")
       .then((res) => res.json())
       .then((data) => {
         setWdata(data);
         setLoading(false);
       });
   }, []);
-  return [wdata, loading];
+  return [wdata, loading]
 };
 
 export default useData;
