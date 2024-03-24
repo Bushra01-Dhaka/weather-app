@@ -14,15 +14,16 @@ import snow_icon from "../../assets/images/Assets/Assets/snow.png";
 const Search = () => {
   useEffect(() => {
     Aos.init();
+    search("Dhaka")
   }, []);
 
   let api_key = "66e0be18fa493f93e7ba93ce26949624";
 
   const [wicon, setWicon] = useState(clear_icon);
 
-  const search = async () => {
-    const element = document.getElementsByClassName("locationName");
-    const searchLocation = element[0].value;
+  const search = async (searchLocation) => {
+    // const element = document.getElementsByClassName("locationName");
+    // const searchLocation = element[0].value;
     console.log(searchLocation);
 
     if (searchLocation === "") {
@@ -114,7 +115,7 @@ const Search = () => {
             <div
               className=""
               onClick={() => {
-                search();
+                search(document.getElementsByClassName("locationName")[0].value);
               }}
             >
               <Link>

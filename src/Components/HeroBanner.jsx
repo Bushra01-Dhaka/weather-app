@@ -3,7 +3,7 @@ import banner_img from "../assets/images/hero-1.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 
 const HeroBanner = () => {
     useEffect(() => {
@@ -13,7 +13,7 @@ const HeroBanner = () => {
   return (
     <div>
         <div
-      className="hero min-h-[90vh]"
+      className="hero min-h-[100vh]"
       style={{
         backgroundImage:
           `url(${banner_img})`,
@@ -30,7 +30,7 @@ const HeroBanner = () => {
         </div>
       </div>
     </div>
-    <Navbar></Navbar>
+    {/* <Navbar></Navbar> */}
     </div>
   );
 };
